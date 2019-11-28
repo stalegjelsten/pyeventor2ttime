@@ -1,6 +1,10 @@
 # About
 A script to convert Eventor (eventor.orientering.no) to ttime database format.
 
+The [ttime](http://ttime.no/) application for Windows is used for timekeeping and entries during orienteering events. At the moment, there is no easy way to pull entries form the [Eventor](https://eventor.orientering.no) platform to ttime. This program is written to make that transition easier.
+
+Previously, ttime could pull data from Eventor directly, but is unfortunately not possible anymore.
+
 # Downloading entries from Eventor
 
 Go to [eventor.orientering.no](https://eventor.orientering.no) and log in. Find your race and click edit to change the race preferences.
