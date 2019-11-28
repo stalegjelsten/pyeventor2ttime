@@ -28,4 +28,4 @@ The Windows executable can be downloaded and should be put in the same folder as
 ```
 pyeventor2ttime.exe "Entry overview XXXXX.xls"
 ```
-The program unpacks all the required modules to a temporary directory, and this will take some time, especially on computers with slower hard drives. It can take anywhere from 10 seconds to 3 minutes. Please be patient. You can cancel the program by pressing Ctrl + C during execution.
+The Windows executable program unpacks all the required modules to a temporary directory, and this will take some time, especially on computers with slower hard drives. It can take anywhere from 10 seconds to a few minutes. Please be patient. You can cancel the program by pressing Ctrl + C during execution.
