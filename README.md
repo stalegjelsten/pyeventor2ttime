@@ -6,10 +6,10 @@ A script to convert Eventor (eventor.orientering.no) to ttime database format.
 Go to [eventor.orientering.no](https://eventor.orientering.no) and log in. Find your race and click edit to change the race preferences.
 
 Go to entry overview. See the image below.
-![Entry overview](ss1.jpg)
+![Entry overview](img/ss1.jpg)
 
 Download the entries as an Excel document.
-![Excel download](ss2.jpg)
+![Excel download](img/ss2.jpg)
 
 
 # Usage
