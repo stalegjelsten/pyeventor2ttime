@@ -39,10 +39,11 @@ def createDataframe(data,eventID):
     # The 'x' flag means entered in ttime
     df["Status"] = "x"
 
-    # Creating a column for ttime special data
-    df["Spesial"] = "A," + eventID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
+    # Creating a column for ttime special data. Format string in next line.
+    # A : Eventor ID's: event ID, organization ID, club ID, runner ID, class ID
+    df["Spesial"] = "A:" + eventID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
 
-    # Reordering and dropping columns to conform with ttime database formatj
+    # Reordering and dropping columns to conform with ttime database format
     df = df[["Person-id","Status","Navn","Klasse","Klubb","Spesial","Emit"]]
 
     # Choosing file name for csv database
