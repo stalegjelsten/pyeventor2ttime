@@ -11,9 +11,14 @@ Go to entry overview. See the image below.
 Download the entries as an Excel document.
 ![Excel download](img/ss2.jpg)
 
+# Installation
+
+The program can be run as a python script or as a standalone Windows program. The Windows executable file is easier to use, but it is quite large (approx. 225 MB), and also quite a bit slower than the python script.
+
+The python script can be downloaded from the repository above. The Windows .exe file can be found under [releases](https://github.com/stalegjelsten/pyeventor2ttime/releases).
 
 # Usage
-You can either run the python file *pyeventor2ttime.py* or the Windows executable file *pyeventor2ttime.exe*. The python file requires the packages *pandas*, *beautifulsoup4* and possibly *lxml* to run. Usage:
+You can either run the python file `pyeventor2ttime.py` or the Windows executable file `pyeventor2ttime.exe`. The python file requires the packages `pandas`, `beautifulsoup4` and possibly `lxml` to run. Usage:
 ```
 python pyeventor2ttime.py "Entry overview XXXXX.xls"
 ```
