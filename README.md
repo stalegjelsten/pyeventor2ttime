@@ -1,5 +1,16 @@
 # About
-A script to convert Eventor (eventor.orientering.no) to ttime database format
+A script to convert Eventor (eventor.orientering.no) to ttime database format.
+
+# Downloading entries from Eventor
+
+Go to [eventor.orientering.no](https://eventor.orientering.no) and log in. Find your race and click edit to change the race preferences.
+
+Go to entry overview. See the image below.
+![Entry overview](ss1.jpg)
+
+Download the entries as an Excel document.
+![Excel download](ss2.jpg)
+
 
 # Usage
 You can either run the python file *pyeventor2ttime.py* or the Windows executable file *pyeventor2ttime.exe*. The python file requires the packages *pandas*, *beautifulsoup4* and possibly *lxml* to run. Usage:
