@@ -17,14 +17,24 @@ def read_excel_xml(path):
         workbook.append(sheet_as_list)
     return workbook
 
+def getEventID():
+    filename = sys.argv[1].split()
+    return filename[2].split('.')[0]
+
+def createDataframe(data,eventID):
+    df = pd.DataFrame(data[7][1:],columns = data[7][0])
+    df["Navn"] = df["Fornavn"] + " " + df["Etternavn"]
+    df["Status"] = "x"
+    df["Spesial"] = "A," + eventID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
+    df = df[["Person-id","Status","Navn","Klasse","Klubb","Spesial","Emit"]]
+    outfile = "EntryDB " + str(eventID) + ".csv"
+    df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
+
+
 data = read_excel_xml(sys.argv[1])
-filename = sys.argv[1].split()
-eventID = filename[2].split('.')[0]
+eventID = getEventID()
+
 print("Converting data and writing .csv file")
-df = pd.DataFrame(data[7][1:],columns = data[7][0])
-df["Navn"] = df["Fornavn"] + " " + df["Etternavn"]
-df["Status"] = "x"
-df["Spesial"] = "A," + eventID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
-df = df[["Person-id","Status","Navn","Klasse","Klubb","Spesial","Emit"]]
-outfile = "EntryDB " + str(eventID) + ".csv"
-df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
+
+createDataframe(data,eventID)
+
