@@ -11,14 +11,15 @@ def read_excel_xml(path):
 
     soup = BeautifulSoup(file,'xml')
     workbook = []
-    for sheet in soup.findAll('Table'): 
-        sheet_as_list = []
-        for row in sheet.findAll('Row'):
-            row_as_list = []
-            for cell in row.findAll('Cell'):
-                row_as_list.append(cell.Data.text)
-            sheet_as_list.append(row_as_list)
-        workbook.append(sheet_as_list)
+
+    # The entries are stored in worksheet and table no. 7
+    sheet = soup.findAll('Table')[7]
+
+    for row in sheet.findAll('Row'):
+        rows_as_list = []
+        for cell in row.findAll('Cell'):
+            rows_as_list.append(cell.Data.text)
+        workbook.append(rows_as_list)    
     return workbook
 
 # Split the file name at spaces and full stops to get the eventor eventID of the event
@@ -30,8 +31,8 @@ def getEventID():
 def createDataframe(data,eventID):
     print("Converting data and writing .csv file")
 
-    # The eventor entries are stored in sheet 7. The first row contains the column headers.
-    df = pd.DataFrame(data[7][1:],columns = data[7][0])
+    # The first row contains the column headers.
+    df = pd.DataFrame(data[1:],columns = data[0])
 
     # Concatenate first and last names
     df["Navn"] = df["Fornavn"] + " " + df["Etternavn"]
@@ -50,10 +51,10 @@ def createDataframe(data,eventID):
     outfile = "EntryDB " + str(eventID) + ".csv"
 
     # Writing dataframe to csv file with correct encoding for ttime.
+    # If you want to change the csv separator, you also need to change the
+    # commas in the ttime special data field above.
     df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
-
 
 data = read_excel_xml(sys.argv[1])
 eventID = getEventID()
 createDataframe(data,eventID)
-
