@@ -1,0 +1,1655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<ss:Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <ss:Styles>
+    <ss:Style ss:ID="Default" ss:Name="Normal">
+      <ss:Alignment ss:Vertical="Bottom" />
+      <ss:Borders />
+      <ss:Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000" />
+      <ss:Interior />
+      <ss:NumberFormat />
+      <ss:Protection />
+    </ss:Style>
+    <ss:Style ss:ID="s63">
+      <ss:Interior ss:Color="#D9D9D9" ss:Pattern="Solid" />
+    </ss:Style>
+    <ss:Style ss:ID="s64">
+      <ss:NumberFormat ss:Format="yyyy/mm/dd\ hh:mm:ss;@" />
+    </ss:Style>
+  </ss:Styles>
+  <ss:Worksheet ss:Name="Frister">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="100" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldingsfrist</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldinger (lag)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldinger (personer)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Beløp</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">27.11.2019 21.00.59</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">660</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Klasser">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="100" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Klasse</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (lag)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (personer)</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">12</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">12</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">3</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">3</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">4</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">4</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">2</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">2</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer C/N</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Etapper">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="100" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Etappe</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Klubber">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="150" />
+      <ss:Column ss:Width="150" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Organisasjons-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Klubb</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Land</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Avgifter för sena ändringar</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (lag)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (personer)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum påmeldingsavgfiter</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum tilleggstjenesteavgifter</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">82</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Fredrikstad SK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">0</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">16</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">16</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">480</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">0</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">480</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">244</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">NTNUI</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">0</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">341</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Søgne og Songdalen OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">4</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">4</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">120</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">0</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">120</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Kretser">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="150" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Krets</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (lag)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (personer)</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Sør-Trøndelag</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Vest-Agder</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">20</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">20</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Østfold</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Land">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="150" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Land</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (lag)</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Sum (personer)</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Tjenester">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="200" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Tjeneste</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Bestillinger</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Beløp</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Påmeldinger">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="150" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="150" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Person-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">IOF-person-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Fornavn</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Etternavn</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Fødselsdato</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Kjønn</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Nasjonalitet</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Organisasjons-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Klubb</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Klasse</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Emit</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">EmiTag</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldingskontingent</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldingstidspunkt</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmelder</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">E-post</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Telefon</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">6908</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Harald</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Eik</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">29.11.1970</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">237882</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-10-22T12:33:05.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Harald Eik</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">haraeik@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">48881420</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">1493</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">113</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Marianne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Andersen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">27.03.1980</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">82</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Fredrikstad SK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">509422</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-04T14:20:52.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Marianne Andersen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">ma@marianne-andersen.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22163</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Tina</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Booth</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">18.05.2004</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">213740</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-19T21:30:46.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Tina Booth</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">turid@booth.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">91768770</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">7394</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">36308</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Marius</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Pytten</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">07.03.1998</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">244</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">NTNUI</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">197877</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T17:31:11.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Marius Pytten</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mariuspytten@yahoo.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">14837</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">John</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Runde</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">03.09.1998</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">504087</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T17:51:32.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">John Runde</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">johnolavrunde@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">+47 4815990</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">13638</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Brage</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Takle</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">25.04.2003</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">198046</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T17:54:30.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Brage Takle</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">brage.takle@yahoo.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">90859372</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">16632</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Svein Erik</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Wiig</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">13.04.1974</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">341</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Søgne og Songdalen OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">216713</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T19:49:31.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Svein Erik Wiig</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">svepicus@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">93401525</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">22743</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christiane Ruud</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Bøckman</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">17.04.2001</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">504438</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T20:11:15.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christiane Ruud Bøckman</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">chribo@live.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">41583215</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">5515</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Ørjan Svaland</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Aas</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">16.11.1990</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">504510</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-24T22:34:16.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Ørjan Svaland Aas</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Oerjan90@hotmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">48121059</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">13842</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Erlend Odd</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Berge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">07.03.2002</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">504439</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-25T11:06:29.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Erlend Odd Berge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">ErlendOdd@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">40788460</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">12611</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Trygve Børte</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Nomeland</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">13.01.2003</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">501209</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-25T12:35:33.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Trygve Børte Nomeland</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">trygvenomeland@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">45803712, 38045689</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">20186</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Simon</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Beckmann Kristiansen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">26.05.2002</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">229986</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-25T19:26:16.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Benedicte Beckmann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">benedictebeckmann@me.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">95936422</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">7458</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christina</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">27.01.1969</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">341</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Søgne og Songdalen OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">504224</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T12:21:19.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christina White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">c.white@broadpark.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">9301</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Astrid</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">24.08.2004</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">341</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Søgne og Songdalen OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">213286</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T12:21:19.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christina White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">c.white@broadpark.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">15302</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Selma</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">17.01.2007</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">kvinne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">341</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Søgne og Songdalen OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Damer C/N</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">212465</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T12:21:19.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christina White</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">c.white@broadpark.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">29280</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christian</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Bøen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">22.04.1982</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">216987</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T15:08:17.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Christian Bøen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">chrboen82@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">90752154</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">7426</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">David</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Runde</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">24.03.2001</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">221505</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T18:26:35.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">David Runde</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">davidrunde@icloud.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">+47 46 77 94 93</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">466</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Thorbjørn</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Værp</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">16.11.1970</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">507857</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T19:05:28.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Thorbjørn Værp</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">t.vaerp@gmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">90583665</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">384</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">16754</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Åsulv Birkeland</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Stormoen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">17.05.1982</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norge</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">231504</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-26T23:58:21.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Åsulv Birkeland Stormoen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">aasulv@live.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">92447450</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">3040</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">16904</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Eirik Heddeland</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Martens</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">20.07.1980</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-lang</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">184333</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-27T08:47:46.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Eirik Heddeland Martens</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">eiriksvensen@hotmail.com</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">95884016</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">27790</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Odd Kristian Hagen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Myre</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">24.11.2002</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">224235</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-27T17:20:01.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Odd Kristian Hagen Myre</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">sol-ohmy@online.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">46896533, 41303225</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">8062</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Nils Arne</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Johannessen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">24.10.1968</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">mann</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Norway</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">189</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Kristiansand OK</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Herrer A-kort</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">187174</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String"></ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="Number">30</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s64">
+          <ss:Data ss:Type="DateTime">2019-11-27T20:38:40.000</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">Nils Arne Johannessen</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">na-johan@online.no</ss:Data>
+        </ss:Cell>
+        <ss:Cell>
+          <ss:Data ss:Type="String">90673404</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+  <ss:Worksheet ss:Name="Bestillinger av tilleggstjenest">
+    <ss:Table ss:DefaultRowHeight="15">
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="50" />
+      <ss:Column ss:Width="150" />
+      <ss:Column ss:Width="200" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="100" />
+      <ss:Column ss:Width="150" />
+      <ss:Row>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Person-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Fornavn</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Etternavn</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Organisasjons-id</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Klubb</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Tjeneste</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Bestillinger</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Beløp</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Påmeldingstidspunkt</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Bestiller</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">E-post</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s63">
+          <ss:Data ss:Type="String">Telefon</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </ss:Table>
+  </ss:Worksheet>
+</ss:Workbook>

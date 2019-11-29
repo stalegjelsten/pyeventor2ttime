@@ -54,6 +54,7 @@ def createDataframe(data,eventID):
     # If you want to change the csv separator, you also need to change the
     # commas in the ttime special data field above.
     df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
+    print("Done. " + str(len(df.index)) + " entries written to file " + outfile)
 
 data = read_excel_xml(sys.argv[1])
 eventID = getEventID()
