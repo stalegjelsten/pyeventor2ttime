@@ -27,12 +27,12 @@ def read_excel_xml(path):
     return workbook
 
 # Split the file name at spaces and full stops to get the eventor eventID of the event
-def getEventID():
+def get_event_ID():
     filename = sys.argv[1].split()
     return filename[2].split('.')[0]
 
 # Create a dataframe from the data
-def createDataframe(data,eventID):
+def create_dataframe(data,eventID):
 
     if data == False:
         return
@@ -41,12 +41,13 @@ def createDataframe(data,eventID):
 
     # The first row contains the column headers.
     df = pd.DataFrame(data[1:],columns = data[0])
-    numEntries = len(df.index)
+
+    number_of_entries = len(df.index)
 
     # Concatenate first and last names
     df["Navn"] = df["Fornavn"] + " " + df["Etternavn"]
 
-    # The 'x' flag means entered in ttime
+    # 'x' is a status flag in ttime which says the participant is entered.
     df["Status"] = "x"
 
     # Creating a column for ttime special data. Format string in next line.
@@ -62,16 +63,17 @@ def createDataframe(data,eventID):
     # Writing dataframe to csv file with correct encoding for ttime.
     # If you want to change the csv separator, you also need to change the
     # commas in the ttime special data field above.
-    df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
+    df.to_csv(outfile, sep=";", header=False, index=False, encoding="iso-8859-1")
 
-
-    print("Done." , numEntries , "entries written to file" , outfile)
+    print("Done." , number_of_entries , "entries written to file" , outfile)
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        print("Please specify an input Eventor .xls file.")
-        print("Usage: python pyeventor2ttime.py Entry overview XXXXX.xls")
-    else:
+    if len(sys.argv) == 2:
+        # executing the script if input file is specified
         data = read_excel_xml(sys.argv[1])
         eventID = getEventID()
         createDataframe(data,eventID)
+    else:
+        # print error message if too many or too few arguments
+        print("Please specify an Eventor .xls file.")
+        print("Usage: python pyeventor2ttime.py Entry overview XXXXX.xls")
