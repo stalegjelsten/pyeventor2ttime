@@ -32,7 +32,7 @@ def get_event_ID():
     return filename[2].split('.')[0]
 
 # Create a dataframe from the data
-def create_dataframe(data,eventID):
+def create_dataframe(data,event_ID):
 
     if data == False:
         return
@@ -71,8 +71,8 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         # executing the script if input file is specified
         data = read_excel_xml(sys.argv[1])
-        eventID = getEventID()
-        createDataframe(data,eventID)
+        event_ID = get_event_ID()
+        create_dataframe(data,event_ID)
     else:
         # print error message if too many or too few arguments
         print("Please specify an Eventor .xls file.")
