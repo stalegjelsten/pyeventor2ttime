@@ -1,5 +1,5 @@
 # About
-This repository consists of a script to convert entries from [Eventor](https://eventor.orientering.no) to the [ttime](http://ttime.no/) database format.
+A script to convert entries from [Eventor](https://eventor.orientering.no) to the [ttime](http://ttime.no/) database format.
 
 The [ttime](http://ttime.no/) application for Windows is used for timekeeping and entries during orienteering events with [emit](https://emit.no) eCards. At the moment, there is no easy way to pull entries from the [Eventor](https://eventor.orientering.no) platform to ttime. This program is written to make that transition easier.
 
@@ -41,3 +41,14 @@ The Windows executable can be downloaded and should be put in the same folder as
 pyeventor2ttime.exe "entries_Random_event.xml"
 ```
 The Windows executable program unpacks all the required modules to a temporary directory, and this will take some time, especially on computers with slower hard drives. It can take anywhere from 10 seconds to a few minutes. Please be patient. You can cancel the program by pressing Ctrl + C during execution.
+
+# FAQ
+
+Q: What about entries without emit ecards?
+A: Those entries are given no ecard number or number 999
+
+Q: The script has a bug.
+A: Please open an issue here on GitHub
+
+Q: I have a problem with the script.
+A: Send me a personal message here on GitHub or by email

@@ -90,7 +90,7 @@ def open_and_soup(path):
     # Open the file as utf-8
     try:
         file = open(path,'r',encoding="utf-8").read()
-        print("Reading data from .xls file")
+        print("Reading data from file.")
     except Exception:
         print("Input file not found.")
         return False
