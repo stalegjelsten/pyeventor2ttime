@@ -9,7 +9,9 @@ Previously, ttime could pull data from Eventor directly, but this is unfortunate
 
 Go to [eventor.orientering.no](https://eventor.orientering.no) and log in. Find your race and click `Edit` to change the race preferences. You need to have at least Event organizer privileges in your club to be able to access these preferences.
 
-You now have two options for exporting your data: as an a[IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) file or as an [Excel 2003 XML format](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-xp/aa140066(v=office.10)?redirectedfrom=MSDN). The IOF XML format is widely supported by different kinds of orienteering software, while the Excel 2003 XML format has the advantage that you can easily manipulate the data by using the Microsoft Excel.
+You now have two options for exporting your data: as an [IOF XML 3.0](https://orienteering.sport/iof/it/data-standard-3-0/) file or as an [Excel 2003 XML format](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-xp/aa140066(v=office.10)?redirectedfrom=MSDN) format file. The IOF XML format is widely supported by different kinds of orienteering software, while the Excel 2003 XML format has the advantage that you can easily manipulate the data by using the Microsoft Excel.
+
+The procedures for downloading both kinds of file formats are given below.
 
 ## Download IOF XML 3.0 data from Eventor
 
@@ -44,11 +46,11 @@ The Windows executable program unpacks all the required modules to a temporary d
 
 # FAQ
 
-Q: What about entries without emit ecards?
+Q: What about entries without emit ecards?  
 A: Those entries are given no ecard number or number 999
 
-Q: The script has a bug.
+Q: The script has a bug.  
 A: Please open an issue here on GitHub
 
-Q: I have a problem with the script.
+Q: I have a problem with the script.  
 A: Send me a personal message here on GitHub or by email
