@@ -2,9 +2,91 @@ import sys
 import pandas as pd
 from bs4 import BeautifulSoup
 
+# parse XML file and output as an entries table
+def read_IOF_xml(path):
+
+    # open file and choose parser
+    soup = open_and_soup(path)
+
+    # initialize the entries table
+    entries = [["Person-id","Fornavn","Etternavn","Organisasjons-id","Klubb","Emit","Klasse"]]
+
+    # The Eventor event ID is the first Id tag in the file
+    event_ID = soup.find("Id").text
+
+    for personentry in soup.findAll("PersonEntry"):
+        # looping through every personentry in the file
+        personal = personentry.find("Person")
+        organisation = personentry.find("Organisation")
+        classtag = personentry.find("Class")
+
+        # storing personal data in variables and
+        # solving cases where data is unavailable
+        try:
+            person_id = personal.find("Id").text
+        except Exception:
+            person_id = ""
+        
+        fornavn = personal.find("Given").text
+        etternavn = personal.find("Family").text
+
+        try:
+            organisasjons_id = organisation.find("Id").text
+            klubb = organisation.find("Name").text
+        except Exception:
+            # setting organisation id to 999 and team to NOTEAM when
+            # club is unavailable
+            organisasjons_id = str(999)
+            klubb = "NOTEAM"
+
+        try: 
+            ecard = personentry.find("ControlCard").text
+        except Exception:
+            # setting emit ecard to 999 for entries w/o ecard
+            ecard = str(999)
+
+        klasse = classtag.find("Name").text
+        
+        # appending all the personal data to the entries table
+        entries.append([person_id, fornavn, etternavn, organisasjons_id, klubb, ecard, klasse])
+
+    return entries, event_ID
+
+
+
 # Read Excel XML file as list of lists
 def read_excel_xml(path):
 
+    # open file and choose parser
+    soup = open_and_soup(path)
+
+    # initilize entries table
+    entries = []
+
+    # The entries are stored in worksheet and table no. 7
+    sheet = soup.findAll('Worksheet')[7]
+
+    for row in sheet.findAll('Row'):
+        # Looping over all the rows in the worksheet
+        rows_as_list = []
+
+        for cell in row.findAll('Cell'):
+            # Looping over all the cells in the row
+
+            if cell.Data == None:
+                # if the cell does not cotain any data,
+                # append empty cell to rows_as_list
+                rows_as_list.append("")
+
+            else:
+                # if the cell contains data, append data
+                rows_as_list.append(cell.Data.text)
+
+        entries.append(rows_as_list)    
+    return entries
+
+# open file and parse it with beautifulsoup
+def open_and_soup(path):
     # Open the file as utf-8
     try:
         file = open(path,'r',encoding="utf-8").read()
@@ -13,23 +95,16 @@ def read_excel_xml(path):
         print("Input file not found.")
         return False
 
-    soup = BeautifulSoup(file,'xml')
-    workbook = []
-
-    # The entries are stored in worksheet and table no. 7
-    sheet = soup.findAll('Table')[7]
-
-    for row in sheet.findAll('Row'):
-        rows_as_list = []
-        for cell in row.findAll('Cell'):
-            rows_as_list.append(cell.Data.text)
-        workbook.append(rows_as_list)    
-    return workbook
+    return BeautifulSoup(file,'xml')
 
 # Split the file name at spaces and full stops to get the eventor eventID of the event
 def get_event_ID():
     filename = sys.argv[1].split()
     return filename[2].split('.')[0]
+
+def get_file_type():
+    filename = sys.argv[1].split('.')
+    return filename[-1]
 
 # Create a dataframe from the data
 def create_dataframe(data,event_ID):
@@ -70,10 +145,15 @@ def create_dataframe(data,event_ID):
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         # executing the script if input file is specified
-        data = read_excel_xml(sys.argv[1])
-        event_ID = get_event_ID()
+        filetype = get_file_type()
+        # choosing parsing function based on file type
+        if filetype == "xml":
+            data, event_ID = read_IOF_xml(sys.argv[1])
+        elif filetype == "xls":
+            data = read_excel_xml(sys.argv[1])
+            event_ID = get_event_ID()
         create_dataframe(data,event_ID)
     else:
         # print error message if too many or too few arguments
-        print("Please specify an Eventor .xls file.")
-        print("Usage: python pyeventor2ttime.py Entry overview XXXXX.xls")
+        print("Please specify a IOF xml (.xml format) or Excel 2003 XML (.xls format) file.")
+        print("Usage: python pyeventor2ttime.py filename.xls")
