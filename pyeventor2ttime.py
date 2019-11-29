@@ -4,10 +4,14 @@ from bs4 import BeautifulSoup
 
 # Read Excel XML file as list of lists
 def read_excel_xml(path):
-    print("Reading data from .xls file")
 
     # Open the file as utf-8
-    file = open(path,'r',encoding="utf-8").read()
+    try:
+        file = open(path,'r',encoding="utf-8").read()
+        print("Reading data from .xls file")
+    except Exception:
+        print("Input file not found.")
+        return False
 
     soup = BeautifulSoup(file,'xml')
     workbook = []
@@ -29,10 +33,15 @@ def getEventID():
 
 # Create a dataframe from the data
 def createDataframe(data,eventID):
+
+    if data == False:
+        return
+    
     print("Converting data and writing .csv file")
 
     # The first row contains the column headers.
     df = pd.DataFrame(data[1:],columns = data[0])
+    numEntries = len(df.index)
 
     # Concatenate first and last names
     df["Navn"] = df["Fornavn"] + " " + df["Etternavn"]
@@ -54,8 +63,15 @@ def createDataframe(data,eventID):
     # If you want to change the csv separator, you also need to change the
     # commas in the ttime special data field above.
     df.to_csv(outfile,sep=";",header=False,index=False,encoding="iso-8859-1")
-    print("Done. " + str(len(df.index)) + " entries written to file " + outfile)
 
-data = read_excel_xml(sys.argv[1])
-eventID = getEventID()
-createDataframe(data,eventID)
+
+    print("Done." , numEntries , "entries written to file" , outfile)
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        print("Please specify an input Eventor .xls file.")
+        print("Usage: python pyeventor2ttime.py Entry overview XXXXX.xls")
+    else:
+        data = read_excel_xml(sys.argv[1])
+        eventID = getEventID()
+        createDataframe(data,eventID)
