@@ -52,13 +52,13 @@ def create_dataframe(data,event_ID):
 
     # Creating a column for ttime special data. Format string in next line.
     # A : Eventor ID's: event ID, organization ID, club ID, runner ID, class ID
-    df["Spesial"] = "A:" + eventID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
+    df["Spesial"] = "A:" + event_ID + ",18," + df["Organisasjons-id"] + "," + df["Person-id"]
 
     # Reordering and dropping columns to conform with ttime database format
     df = df[["Person-id","Status","Navn","Klasse","Klubb","Spesial","Emit"]]
 
     # Choosing file name for csv database
-    outfile = "EntryDB " + str(eventID) + ".csv"
+    outfile = "EntryDB " + str(event_ID) + ".csv"
 
     # Writing dataframe to csv file with correct encoding for ttime.
     # If you want to change the csv separator, you also need to change the
