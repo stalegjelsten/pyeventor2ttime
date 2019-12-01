@@ -2,8 +2,8 @@ import sys
 import pandas as pd
 from bs4 import BeautifulSoup
 
-# parse XML file and output as an entries table
 def read_IOF_xml(path):
+    # parse XML file and output as a list of lists
 
     # open file and choose parser
     soup = open_and_soup(path)
@@ -16,37 +16,42 @@ def read_IOF_xml(path):
 
     for personentry in soup.findAll("PersonEntry"):
         # looping through every personentry in the file
+
+        # finding the children of personentry in the .xml file
         personal = personentry.find("Person")
         organisation = personentry.find("Organisation")
         classtag = personentry.find("Class")
 
-        # storing personal data in variables and
-        # solving cases where data is unavailable
+        # trying to extract personentry data if available
         try:
             person_id = personal.find("Id").text
         except Exception:
             person_id = ""
-        
-        fornavn = personal.find("Given").text
-        etternavn = personal.find("Family").text
-
+       
         try:
             organisasjons_id = organisation.find("Id").text
             klubb = organisation.find("Name").text
         except Exception:
             # setting organisation id to 999 and team to NOTEAM when
             # club is unavailable
-            organisasjons_id = str(999)
+            organisasjons_id = "999"
             klubb = "NOTEAM"
 
         try: 
             ecard = personentry.find("ControlCard").text
         except Exception:
             # setting emit ecard to 999 for entries w/o ecard
-            ecard = str(999)
+            ecard = "999"
 
-        klasse = classtag.find("Name").text
-        
+        try:
+            klasse = classtag.find("Name")
+        except Exception:
+            klasse = "NOCLASS"
+
+        # every entry needs a given and family name, so no test required
+        fornavn = personal.find("Given").text
+        etternavn = personal.find("Family").text
+
         # appending all the personal data to the entries table
         entries.append([person_id, fornavn, etternavn, organisasjons_id, klubb, ecard, klasse])
 
@@ -54,16 +59,16 @@ def read_IOF_xml(path):
 
 
 
-# Read Excel XML file as list of lists
 def read_excel_xml(path):
+    # Read Excel XML file and output as list of lists
 
     # open file and choose parser
     soup = open_and_soup(path)
 
-    # initilize entries table
+    # initialize entries table
     entries = []
 
-    # The entries are stored in worksheet and table no. 7
+    # The entries are stored in worksheet no. 7
     sheet = soup.findAll('Worksheet')[7]
 
     for row in sheet.findAll('Row'):
@@ -85,8 +90,8 @@ def read_excel_xml(path):
         entries.append(rows_as_list)    
     return entries
 
-# open file and parse it with beautifulsoup
 def open_and_soup(path):
+    # open file and parse it with beautifulsoup
     # Open the file as utf-8
     try:
         file = open(path,'r',encoding="utf-8").read()
@@ -97,19 +102,21 @@ def open_and_soup(path):
 
     return BeautifulSoup(file,'xml')
 
-# Split the file name at spaces and full stops to get the eventor eventID of the event
 def get_event_ID():
+    # Split the file name at spaces and full stops to get the eventor eventID
     filename = sys.argv[1].split()
     return filename[2].split('.')[0]
 
 def get_file_type():
+    # Split the file name at the last full stop to get file type
     filename = sys.argv[1].split('.')
     return filename[-1]
 
-# Create a dataframe from the data
 def create_dataframe(data,event_ID):
+    # Create a dataframe from the data
 
     if data == False:
+        # Return if the input is empty
         return
     
     print("Converting data and writing .csv file")
@@ -143,16 +150,21 @@ def create_dataframe(data,event_ID):
     print("Done." , number_of_entries , "entries written to file" , outfile)
 
 if __name__ == "__main__":
+
     if len(sys.argv) == 2:
         # executing the script if input file is specified
         filetype = get_file_type()
+
         # choosing parsing function based on file type
         if filetype == "xml":
             data, event_ID = read_IOF_xml(sys.argv[1])
+
         elif filetype == "xls":
             data = read_excel_xml(sys.argv[1])
             event_ID = get_event_ID()
+
         create_dataframe(data,event_ID)
+
     else:
         # print error message if too many or too few arguments
         print("Please specify a IOF xml (.xml format) or Excel 2003 XML (.xls format) file.")
