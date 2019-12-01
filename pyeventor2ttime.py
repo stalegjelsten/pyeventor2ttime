@@ -44,7 +44,7 @@ def read_IOF_xml(path):
             ecard = "999"
 
         try:
-            klasse = classtag.find("Name")
+            klasse = classtag.find("Name").text
         except Exception:
             klasse = "NOCLASS"
 
@@ -102,14 +102,14 @@ def open_and_soup(path):
 
     return BeautifulSoup(file,'xml')
 
-def get_event_ID():
+def get_event_ID(infile):
     # Split the file name at spaces and full stops to get the eventor eventID
-    filename = sys.argv[1].split()
+    filename = infile.split()
     return filename[2].split('.')[0]
 
-def get_file_type():
+def get_file_type(infile):
     # Split the file name at the last full stop to get file type
-    filename = sys.argv[1].split('.')
+    filename = infile.split('.')
     return filename[-1]
 
 def create_dataframe(data,event_ID):
@@ -149,23 +149,25 @@ def create_dataframe(data,event_ID):
 
     print("Done." , number_of_entries , "entries written to file" , outfile)
 
+
+def gui_open_file():
+    # open a GUI file picker
+    import tkinter
+    from tkinter import filedialog
+    tkinter.Tk().withdraw()
+    filename = filedialog.askopenfilename(initialdir = "~",title = "Select file",filetypes = [("xml or xls files","*.xml *.xls")])
+    return filename
+
 if __name__ == "__main__":
 
-    if len(sys.argv) == 2:
-        # executing the script if input file is specified
-        filetype = get_file_type()
+    # open GUI file picker if no file or multiple files are specified
+    filename = sys.argv[1] if len(sys.argv) == 2 else gui_open_file()
+    filetype = get_file_type(filename)
 
-        # choosing parsing function based on file type
-        if filetype == "xml":
-            data, event_ID = read_IOF_xml(sys.argv[1])
-
-        elif filetype == "xls":
-            data = read_excel_xml(sys.argv[1])
-            event_ID = get_event_ID()
-
-        create_dataframe(data,event_ID)
-
-    else:
-        # print error message if too many or too few arguments
-        print("Please specify a IOF xml (.xml format) or Excel 2003 XML (.xls format) file.")
-        print("Usage: python pyeventor2ttime.py filename.xls")
+    if filetype == "xml":
+        data, event_ID = read_IOF_xml(filename)
+    elif filetype == "xls":
+        data = read_excel_xml(filename)
+        event_ID = get_event_ID(filename)
+    
+    create_dataframe(data,event_ID)

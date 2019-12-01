@@ -41,13 +41,9 @@ You can either run the python file `pyeventor2ttime.py` or the Windows executabl
 python pyeventor2ttime.py "Entry overview XXXXX.xls"
 ```
 
-The Windows executable can be downloaded and should be put in the same folder as the .xls or .xml file you downloaded from Eventor. You need to open a command prompt in the same folder (tips: in Windows Explorer, hold the Shift key and right-click inside the folder to launch a command prompt from there). Use the command:
+The python file can also be called without any argument (i.e. without a file name), in which case it will open a system dialog box, asking for the file name.
 
-```bash
-pyeventor2ttime.exe "entries_Random_event.xml"
-```
-
-The Windows executable program unpacks all the required modules to a temporary directory, and this will take some time, especially on computers with slower hard drives. It can take anywhere from 10 seconds to a few minutes. Please be patient. You can cancel the program by pressing Ctrl + C during execution.
+The Windows executable file is quite easy to use -- just download the file and open it. It will take some time to start up, since it needs to unpack all the python code and modules to a temporary directory on your hard drive. This can take anywhere from 10 seconds to a few minutes. Please be patient. You can cancel the program by pressing Ctrl + C during execution. Once the Select file dialog box opens up, navigate to your .xls or .xml file. The output file will be stored in the directory of the `pyeventor2ttime.exe` file.
 
 ## FAQ
 
