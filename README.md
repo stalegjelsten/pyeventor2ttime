@@ -1,6 +1,6 @@
 # pyeventor2ttime
 
-**Important update:** Version 0.73 has fixed the SSL issues, so **this program is superflous**.
+**Important update:** Version 0.73 of [ttime](http://ttime.no/) has fixed the SSL issues, so **this program is superflous**. The repository will be retained but not maintained.
 
 ## About
 
